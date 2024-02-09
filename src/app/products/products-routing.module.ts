@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
-import { ListComponent } from './pages/list/list.component';
-import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { ListComponent } from './pages/list/list.component';
 import { ProductComponent } from './pages/product/product.component';
-
 
 const routes: Routes = [
   {
@@ -28,3 +27,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class ProductsRoutingModule { }
+

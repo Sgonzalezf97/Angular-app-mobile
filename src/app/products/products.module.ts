@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListComponent } from './pages/list/list.component';
+
 import { ProductComponent } from './pages/product/product.component';
-import { CartComponent } from './pages/cart/cart.component';
+import { ProductsRoutingModule } from './products-routing.module';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
+import { ListComponent } from './pages/list/list.component';
+import { CartComponent } from './pages/cart/cart.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MaterialModule } from '../material/material.module';
-import { ProductsRoutingModule } from './products-routing.module';
-
-
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
-    ListComponent,
     ProductComponent,
     LayoutPageComponent,
+    ListComponent,
     CartComponent,
     SearchPageComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,

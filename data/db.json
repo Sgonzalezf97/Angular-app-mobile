@@ -6,6 +6,48 @@
       "email": "john.due@gmail.com"
     }
   ],
+  "products": [
+    {
+      "id": 1,
+      "nombre": "Pimentón",
+      "precio": "5000",
+      "peso": "500 gr",
+      "fecha_publicacion": "09/02/2024",
+      "fecha_caducidad": "20/02/2024"
+    },
+    {
+      "id": 2,
+      "nombre": "Manzána",
+      "precio": "6000",
+      "peso": "500 gr",
+      "fecha_publicacion": "09/02/2024",
+      "fecha_caducidad": "20/02/2024"
+    },
+    {
+      "id": 3,
+      "nombre": "Limón",
+      "precio": "6000",
+      "peso": "500 gr",
+      "fecha_publicacion": "09/02/2024",
+      "fecha_caducidad": "25/02/2024"
+    },
+    {
+      "id": 1,
+      "nombre": "Platano Verde",
+      "precio": "6000",
+      "peso": "1000 gr",
+      "fecha_publicacion": "09/02/2024",
+      "fecha_caducidad": "20/02/2024"
+    },
+    {
+      "id": 1,
+      "nombre": "Platano Maduro",
+      "precio": "6000",
+      "peso": "1000 gr",
+      "fecha_publicacion": "09/02/2024",
+      "fecha_caducidad": "13/02/2024"
+    }
+  ],
   "heroes": [
     {
       "id": "dc-batman",
