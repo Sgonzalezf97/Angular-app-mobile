@@ -9,6 +9,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
+import { ProductImagePipe } from './pipes/product-image.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CardComponent } from './components/card/card.component';
     CartComponent,
     SearchPageComponent,
     CardComponent,
+    ProductImagePipe
   ],
   imports: [
     CommonModule,

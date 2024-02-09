@@ -1,10 +1,19 @@
-<h1>Listado de Productos</h1>
+
 <mat-divider></mat-divider>
 
-<div class="grid bm-8 pt-2" >
-
+<div class="mx-5 mt-5 grid bm-8 pt-2" >
+  <div class="col-12 mt-5 md:col-6 md:col-offset-3 md:mt-8">
+    <img class="p-5 m-auto d-flex" width="80%" src="../../../../assets/Logo.png">
+  </div>
+  <div class="col-12 mt-5 md:col-6 md:col-offset-3 md:mt-8" style="display: grid;">
+    <mat-form-field>
+      <mat-label>Buscar</mat-label>
+      <input type="text" matInput placeholder="Buscar tu producto">
+    </mat-form-field>
+  </div>
+  <mat-divider></mat-divider>
   <div *ngFor="let product of productos"
-  class="col-6 sm:col-4 md:col-3 xl:col-2">
+  class="col-12 sm:col-4 md:col-3 xl:col-2">
     <products-card [product]="product"></products-card>
   </div>
 

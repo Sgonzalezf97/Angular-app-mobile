@@ -12,6 +12,9 @@ export interface Product {
   peso:              string;
   fecha_publicacion: string;
   fecha_caducidad:   string;
+  alt_img:   string;
+  name_img:   string;
+  cantidad:   number;
 }
 
 export interface User {

@@ -6,3 +6,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .spacer {
   flex: 1 1 auto;
 }
+
+.fixed-position{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.mat-mdc-button:not(:disabled) {
+  color: #296956;
+}
+
+.mat-mdc-unelevated-button.mat-primary {
+  --mdc-filled-button-container-color: #296956;
+  --mdc-filled-button-label-text-color: #fff;
+  --mat-filled-button-state-layer-color: #fff;
+  --mat-filled-button-ripple-color: rgba(255, 255, 255, 0.1);
+}

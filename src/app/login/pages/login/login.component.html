@@ -1,5 +1,6 @@
 <div class="flex flex-column">
-  <span class="text-lg mb-4">Login</span>
+  <h2 class="text-lg mb-4" style="color: #0092BA;">Ingresar</h2>
+  <p>¡Hola Bienvenido a Food Saver!</p>
   <mat-form-field>
     <mat-label>Usuario</mat-label>
     <input type="text" matInput placeholder="Nombre de Usuario">
@@ -8,13 +9,16 @@
     <mat-label>Contraseña</mat-label>
     <input type="password" matInput placeholder="Constraseña">
   </mat-form-field>
-  <button mat-button mat-flat-button color="primary">
+  <button mat-button mat-flat-button color="primary" routerLink="/products/list">
     <mat-icon>save</mat-icon>
-    Ingresar
+    Iniciar Sesión
   </button>
 
-  <div class="flex justify-content-end mt-5">
-    <a routerLink="/auth/new-account">¿No tienes cuenta?</a>
+  <div class="flex justify-content-center mt-5">
+    <p>¿No tienes cuenta?</p><a routerLink="/auth/new-account" style="color: #296956;">¡Registrate!</a>
+  </div>
+  <div class="flex justify-content-center mt-5">
+    <a routerLink="/auth/new-account" style="color: #296956;">¿Olvidaste tu contrseña?</a>
   </div>
 
 </div>

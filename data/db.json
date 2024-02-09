@@ -13,15 +13,19 @@
       "precio": "5000",
       "peso": "500 gr",
       "fecha_publicacion": "09/02/2024",
-      "fecha_caducidad": "20/02/2024"
+      "fecha_caducidad": "20/02/2024",
+      "cantidad": "10",
+      "name_img": "Pimenton"
     },
     {
       "id": 2,
-      "nombre": "Manzána",
+      "nombre": "Manzana",
       "precio": "6000",
       "peso": "500 gr",
       "fecha_publicacion": "09/02/2024",
-      "fecha_caducidad": "20/02/2024"
+      "fecha_caducidad": "20/02/2024",
+      "cantidad": "10",
+      "name_img": "Manzana"
     },
     {
       "id": 3,
@@ -29,23 +33,29 @@
       "precio": "6000",
       "peso": "500 gr",
       "fecha_publicacion": "09/02/2024",
-      "fecha_caducidad": "25/02/2024"
+      "fecha_caducidad": "25/02/2024",
+      "cantidad": "10",
+      "name_img": "Limon"
     },
     {
-      "id": 1,
+      "id": 4,
       "nombre": "Platano Verde",
       "precio": "6000",
       "peso": "1000 gr",
       "fecha_publicacion": "09/02/2024",
-      "fecha_caducidad": "20/02/2024"
+      "fecha_caducidad": "20/02/2024",
+      "cantidad": "10",
+      "name_img": "PlatanoVerde"
     },
     {
-      "id": 1,
+      "id": 5,
       "nombre": "Platano Maduro",
       "precio": "6000",
       "peso": "1000 gr",
       "fecha_publicacion": "09/02/2024",
-      "fecha_caducidad": "13/02/2024"
+      "fecha_caducidad": "13/02/2024",
+      "cantidad": "10",
+      "name_img": "PlatanoMaduro"
     }
   ],
   "heroes": [
