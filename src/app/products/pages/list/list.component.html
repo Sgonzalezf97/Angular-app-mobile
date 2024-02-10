@@ -7,8 +7,25 @@
   </div>
   <div class="col-12 mt-5 md:col-6 md:col-offset-3 md:mt-8" style="display: grid;">
     <mat-form-field>
-      <mat-label>Buscar</mat-label>
-      <input type="text" matInput placeholder="Buscar tu producto">
+      <mat-label>Buscador de héroes</mat-label>
+      <input
+        type="text"
+        matInput
+        [formControl]="searchInput"
+        (input)="searchProduct()"
+        [matAutocomplete]="auto"
+        >
+        <mat-autocomplete autoActiveFirstOption
+          #auto="matAutocomplete"
+          (optionSelected)="onSelectedOption($event)"
+          >
+          <mat-option *ngFor="let product of products" [value]="product">
+            {{product.nombre}}
+          </mat-option>
+          <mat-option *ngIf="products.length === 0 && searchInput.value &&searchInput.value.length > 0">
+            No se encontró nada con el término {{searchInput.value}}
+          </mat-option>
+        </mat-autocomplete>
     </mat-form-field>
   </div>
   <mat-divider></mat-divider>
