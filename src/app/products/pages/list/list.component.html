@@ -1,7 +1,7 @@
 
 <mat-divider></mat-divider>
 
-<div class="mx-5 mt-5 grid bm-8 pt-2" >
+<div class="mx-5  grid bm-8" >
   <div class="col-12 mt-5 md:col-6 md:col-offset-3 md:mt-8">
     <img class="p-5 m-auto d-flex" width="80%" src="../../../../assets/Logo.png">
   </div>
@@ -19,7 +19,7 @@
           #auto="matAutocomplete"
           (optionSelected)="onSelectedOption($event)"
           >
-          <mat-option *ngFor="let product of products" [value]="product">
+          <mat-option *ngFor="let product of products" [value]="product.id" [routerLink]="'/products/'+product.id">
             {{product.nombre}}
           </mat-option>
           <mat-option *ngIf="products.length === 0 && searchInput.value &&searchInput.value.length > 0">
@@ -27,6 +27,7 @@
           </mat-option>
         </mat-autocomplete>
     </mat-form-field>
+    <h2>Estos son los paquetes del dia</h2>
   </div>
   <mat-divider></mat-divider>
   <div *ngFor="let product of productos"

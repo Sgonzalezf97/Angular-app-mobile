@@ -13,6 +13,7 @@ const routes: Routes = [
     component:LayoutPageComponent,
     children:[
       {path:'cart',component:CartComponent},
+      {path:'new-product',component:NewPageComponent},
       {path:'search',component:SearchPageComponent},
       {path:'edit/:id',component:NewPageComponent},
       {path:'list',component:ListComponent},

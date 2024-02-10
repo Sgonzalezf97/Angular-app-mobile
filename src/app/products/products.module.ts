@@ -11,6 +11,7 @@ import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { ProductImagePipe } from './pipes/product-image.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NewPageComponent } from './pages/new-page/new-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CartComponent,
     SearchPageComponent,
     CardComponent,
-    ProductImagePipe
+    ProductImagePipe,
+    NewPageComponent
   ],
   imports: [
     CommonModule,
