@@ -1,1 +1,41 @@
-<p>product works!</p>
+<ng-template #divLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner>
+
+      </mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
+
+<div *ngIf="product; else divLoading"  class="grid p-2">
+  <!-- {{product | json }} -->
+
+  <mat-card class="col-12 sm:col-6">
+    <mat-card-header>
+      <mat-card-title>{{product.nombre}}</mat-card-title>
+      <mat-card-subtitle>{{product.precio}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img [src]="product | productImage" [alt]="product.nombre" mat-card-image>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Información</mat-card-title>
+      <mat-card-subtitle>{{product.peso}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>{{product.precio}}</mat-list-item>
+        <mat-list-item>{{product.cantidad}}</mat-list-item>
+        <mat-list-item>{{product.fecha_caducidad}}</mat-list-item>
+        <mat-list-item>{{product.fecha_publicacion}}</mat-list-item>
+      </mat-list>
+
+      <button mat-button color="warn" (click)="goBack()">
+        Regresar</button>
+    </mat-card-content>
+  </mat-card>
+</div>

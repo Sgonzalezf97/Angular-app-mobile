@@ -10,6 +10,7 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { ProductImagePipe } from './pipes/product-image.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ProductImagePipe } from './pipes/product-image.pipe';
     CommonModule,
     MaterialModule,
     ProductsRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class ProductsModule { }
